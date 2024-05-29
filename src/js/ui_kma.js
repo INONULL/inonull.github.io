@@ -127,7 +127,7 @@ function toggleKMAPDF() {
             pdf_content_kma.classList.toggle("visible");
             pdf_button_kma.textContent = '[▶보기 Click]';
         } else {
-            roll_start(pdf_content_kma,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KMA/대만지진정보.pdf&embedded=true','doc/KMA/대만지진정보.pdf');
+            roll_start(pdf_content_kma,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KMA/대만지진정보.pdf&embedded=true','doc/KMA/대만지진정보.pdf');
             pdf_content_kma.classList.toggle("visible");
             pdf_button_kma.textContent = '[▼닫기 Click]';
         }
@@ -136,7 +136,7 @@ function toggleKMAPDF() {
             pdf_content_kma.classList.toggle("visible");
             pdf_button_kma.textContent = '[▶Open Click]';
         } else {
-            roll_start(pdf_content_kma,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KMA/TaiwanEarthquakeInformation.pdf&embedded=true','doc/KMA/TaiwanEarthquakeInformation.pdf');
+            roll_start(pdf_content_kma,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KMA/TaiwanEarthquakeInformation.pdf&embedded=true','doc/KMA/TaiwanEarthquakeInformation.pdf');
             pdf_content_kma.classList.toggle("visible");
             pdf_button_kma.textContent = '[▼Close Click]';
         }  

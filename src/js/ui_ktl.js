@@ -92,7 +92,7 @@ function toggleKTLPDF() {
             pdf_content_ktl.classList.toggle("visible");
             pdf_button_ktl.textContent = '[▶보기 Click]';
         } else {
-            roll_start(pdf_content_ktl, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/653650cfbb7996dd8068d6d3523f46d5176169ff/doc/KTL/BondingIsolationTesttoCERE101102.pdf&embedded=true','doc/KTL/BondingIsolationTesttoCERE101102.pdf');
+            roll_start(pdf_content_ktl, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KTL/BondingIsolationTesttoCERE101102.pdf&embedded=true','doc/KTL/BondingIsolationTesttoCERE101102.pdf');
             pdf_content_ktl.classList.toggle("visible");
             pdf_button_ktl.textContent = '[▼닫기 Click]';
         }
@@ -101,7 +101,7 @@ function toggleKTLPDF() {
             pdf_content_ktl.classList.toggle("visible");
             pdf_button_ktl.textContent = '[▶Open Click]';
         } else {
-            roll_start(pdf_content_ktl, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/653650cfbb7996dd8068d6d3523f46d5176169ff/doc/KTL/BondingIsolationTesttoCERE101102.pdf&embedded=true','doc/KTL/BondingIsolationTesttoCERE101102.pdf')
+            roll_start(pdf_content_ktl, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KTL/BondingIsolationTesttoCERE101102.pdf&embedded=true','doc/KTL/BondingIsolationTesttoCERE101102.pdf')
             pdf_content_ktl.classList.toggle("visible");
             pdf_button_ktl.textContent = '[▼Close Click]';
         } 

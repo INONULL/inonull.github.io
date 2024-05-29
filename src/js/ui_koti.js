@@ -32,8 +32,8 @@ function toggleKOTIPaper() {
             paper_content_koti.classList.toggle("visible");
             paper_button_koti.textContent = '[▶보기 Click]';
         } else {
-            roll_start(paper_content_koti1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KOTI/논문분석1.pdf&embedded=true','doc/KOTI/논문분석1.pdf');
-            roll_start(paper_content_koti2,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KOTI/논문분석2.pdf&embedded=true','doc/KOTI/논문분석2.pdf');
+            roll_start(paper_content_koti1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KOTI/논문분석1.pdf&embedded=true','doc/KOTI/논문분석1.pdf');
+            roll_start(paper_content_koti2,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KOTI/논문분석2.pdf&embedded=true','doc/KOTI/논문분석2.pdf');
             paper_content_koti.classList.toggle("visible");
             paper_button_koti.textContent = '[▼닫기 Click]';
         }
@@ -42,8 +42,8 @@ function toggleKOTIPaper() {
             paper_content_koti.classList.toggle("visible");;
             paper_button_koti.textContent = '[▶Open Click]';
         } else {
-            roll_start(paper_content_koti1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KOTI/논문분석1.pdf&embedded=true','doc/KOTI/논문분석1.pdf');
-            roll_start(paper_content_koti2,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KOTI/논문분석2.pdf&embedded=true','doc/KOTI/논문분석2.pdf');
+            roll_start(paper_content_koti1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KOTI/논문분석1.pdf&embedded=true','doc/KOTI/논문분석1.pdf');
+            roll_start(paper_content_koti2,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KOTI/논문분석2.pdf&embedded=true','doc/KOTI/논문분석2.pdf');
             paper_content_koti.classList.toggle("visible");
             paper_button_koti.textContent = '[▼Close Click]';
         }
@@ -80,7 +80,7 @@ function toggleKOTIPDF() {
             pdf_content_koti.classList.toggle("visible");
             pdf_button_koti.textContent = '[▶보기 Click]';
         } else {
-            roll_start(pdf_content_koti, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KOTI/교통연구원.pdf&embedded=true','doc/KOTI/교통연구원.pdf');
+            roll_start(pdf_content_koti, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KOTI/교통연구원.pdf&embedded=true','doc/KOTI/교통연구원.pdf');
             pdf_content_koti.classList.toggle("visible");
             pdf_button_koti.textContent = '[▼닫기 Click]';
         }
@@ -89,7 +89,7 @@ function toggleKOTIPDF() {
             pdf_content_koti.classList.toggle("visible");
             pdf_button_koti.textContent = '[▶Open Click]';
         } else {
-            roll_start(pdf_content_koti, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/336424a23a221966853be3c9adcd3224ecfb7f45/doc/KOTI/TransportInstitute.pdf&embedded=true','doc/KOTI/TransportInstitute.pdf');
+            roll_start(pdf_content_koti, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KOTI/TransportInstitute.pdf&embedded=true','doc/KOTI/TransportInstitute.pdf');
             pdf_content_koti.classList.toggle("visible");
             pdf_button_koti.textContent = '[▼Close Click]';
         } 

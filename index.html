@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="ch-ua=*; ch-ua-mobile=*; ch-ua-platform=*; ch-ua-form=*;">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="src/css/css.css">
+    <script src="src/js/ui_typecheck.js"></script>
+    <script src="src/js/ui_all.js"></script>
+    <script src="src/js/ui_krit.js"></script>
+    <script src="src/js/ui_koti.js"></script>
+    <script src="src/js/ui_knu.js"></script>
+    <script src="src/js/ui_ktl.js"></script>
+    <script src="src/js/ui_kma.js"></script>
+    <script src="src/js/ui_career.js"></script>
+    <title class="title">INONULL</title>
+</head>
+<body>
+<div class="container">
+    <div class="title_container">
+        <img src="img/favicon.png" alt="favicon">
+        <div>
+            <h1 class="header">INONULL</h1>
+            <a href="https://github.com/INONULL/" class="link">GitHub Repository</a>
+        </div>
+        <img src="img/favicon.png" alt="favicon">
+    </div>
+    <div class="language-switch">
+        <button onclick="switchLanguage('en')" class="button_lang">EN</button>
+        <button onclick="switchLanguage('ko')" class="button_lang">KO</button>
+    </div>
+    <div id="en-content"  style="display: none;">
+        <div class="round-popup_all">
+            <button class="toggle-btn-title-top" id="all_button" aria-expanded="false" onclick="toggleALL()">Defense Agency for Technology and Quality ~ Korea Meteorological Administration]◀ [Click]</button>
+            <div id="round_popup_sub">
+        <!--Defense-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="krit_button" aria-expanded="false" onclick="toggleKRIT()">Defense Technical Quality Assurance Agency(DTAQ)<br>[Defense Technology Promotion Research Institute (KRIT)]◀ [Click]</button>
+            <div id="round_popup_sub_krit">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">RFP Writing and Project Management(Korean)</p>
+                        <button class="toggle-btn" id="image_button_krit" aria-expanded="false" onclick="toggleKRITImage()">[▶View Click]</button>
+                        <div id="image_content_krit">
+                            <img src="doc/KRIT/공고.PNG" class="image" alt="">
+                        </div>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Participation in Article Writing_(Korean)(4/4 Author)</p>
+                        <button class="toggle-btn" id="pdf_button_krit" aria-expanded="false" onclick="toggleKRITPDF()">[▶Preview Click]</button>
+                        <!-- <iframe id="pdf_content_krit" src="doc/KRIT/메타버스의 국방분야 구현 방안에 대한 고찰.pdf" title="webviewer"></iframe> -->
+                        <iframe src="about:blank" id="pdf_content_krit"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Transportation-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="koti_button" aria-expanded="false" onclick="toggleKOTI()">KOrea Transport Institute(KOTI)◀ [Click</button>
+            <div id="round_popup_sub_koti">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">Paper Analysis and Summarization(EN->KO)</p>
+                        <button class="toggle-btn" id="paper_button_koti" aria-expanded="false" onclick="toggleKOTIPaper()">[▶View Click]</button>
+                        <div id = "paper_content_koti">
+                            <!-- <iframe src="doc/KOTI/논문분석1.pdf" title="webviewer" class="paper_content_koti"></iframe> -->
+                            <iframe src="about:blank" class="paper_content_koti" id="paper_content_koti1"></iframe>
+                            <!-- <iframe src="doc/KOTI/논문분석2.pdf" title="webviewer" class="paper_content_koti"></iframe> -->
+                            <iframe src="about:blank" class="paper_content_koti" id="paper_content_koti2"></iframe>
+                        </div>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Transport Big Data Analysis Coding</p>
+                        <button class="toggle-btn" id="pdf_button_koti" aria-expanded="false" onclick="toggleKOTIPDF()">[▶View Click]</button>
+                        <!-- <iframe id="pdf_content_koti" src="doc/KOTI/TransportInstitute.pdf" title="webviewer"></iframe> -->
+                        <iframe id="pdf_content_koti" src="about:blank"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Annual Report Editing and Enhancement(For some reasons may not be uploaded)</p>
+                        <button class="toggle-btn" id="embed_button" aria-expanded="false" onclick="toggleKOTIEmbed()">[▶Preview Click]</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--IACT-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="knu_button" aria-expanded="false" onclick="toggleKNU()">KyungPook National University_IACT(KNU/IACT)◀ [Click]</button>
+            <div id="round_popup_sub_knu">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">Embedded Firmware Coding(C Language)[DATA LOSS..😫]</p>
+                        <button class="toggle-btn" id="knu_video_button" aria-expanded="false" onclick="toggleKNUVideo()">[▶View Click]</button>
+                        <video src="about:blank" id="video_content_knu" controls>LED</video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Korean Testing Laboratory-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="ktl_button" aria-expanded="false" onclick="toggleKTL()">Korean Testing Laboratory(KTL)◀ [Click]</button>
+            <div id="round_popup_sub_ktl">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">EMC Test Manual(Korean)</p>
+                        <button class="toggle-btn" id="pdf_button_ktl" aria-expanded="false" onclick="toggleKTLPDF()">[▶View Click]</button>
+                        <!-- <iframe id="pdf_content_ktl" src="doc/KTL/Bonding_Isolation_Test_to_CERE101102.pdf" title="webviewer"></iframe> -->
+                        <iframe id="pdf_content_ktl" src="about:blank"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Photo Tool(Python)</p>
+                        <a href="https://github.com/INONULL/img_conv" class="link">Link</a>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">EMC32 Auxiliary Program Development(Python)</p>
+                        <a href="https://github.com/INONULL/EMC32_Figure_Extractor" class="link">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Korea Meteorological Administration-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="kma_button" aria-expanded="false" onclick="toggleKMA()">Korea Meteorological Administration(KMA)◀ [Click]</button>
+            <div id="round_popup_sub_kma">
+                <div class="round-popup">
+                    <p class="project-title">JMA_EQ_ALERT(Server/Chrome_Extension/Telegram)</p>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Personal Server Configuration</p>
+                        <button class="toggle-btn" id="image_button_kma" aria-expanded="false" onclick="toggleKMAImage()">[▶View Click]</button>
+                        <div id="image_content_kma">
+                            <img src="img/Server.png" class="image" alt="">
+                        </div>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Personal Server (JMA_Alert): <a class="project-title" href="https://inonull.xyz">Link(HTTPS)</a></p>
+                        <button class="toggle-btn" id="embed_button_kma" aria-expanded="false" onclick="toggleKMAEmbed()">[▶Server Preview Click]</button>
+                        <iframe src="about:blank" id="embed_content_kma" title="JMA_EEW_Alert"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Telegram_Message</p>
+                        <button class="toggle-btn" id="telegram_button_kma" aria-expanded="false" onclick="toggleKMATelegram()">[▶View Click]</button>
+                        <div id="telegram_content_kma">
+                            <img src="img/kma/jma_alert_test.PNG" class="image" alt="">
+                            <img src="img/kma/jma_alert.PNG" class="image" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="round-popup">
+                    <p class="project-title">CWA_EQ_ALERT(Chrome_Extension/Telegram)</p>
+                    <div class="round-popup_sub">
+                        <p class="project-title">CWA_EQ_ALERT Structure</p>
+                        <button class="toggle-btn" id="pdf_button_kma" aria-expanded="false" onclick="toggleKMAPDF()">[▶View Click]</button>
+                        <!-- <iframe id="pdf_content_kma" src="doc/KMA/TaiwanEarthquakeInformation.pdf" title="webviewer"></iframe> -->
+                        <iframe id="pdf_content_kma" src="about:blank"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Telegram_Message(Additional Project)</p>
+                        <button class="toggle-btn" id="telegram_button_kma1" aria-expanded="false" onclick="toggleKMATelegram1()">[▶View Click]</button>
+                        <div id="telegram_content_kma1">
+                            <img src="img/kma/cwa_alert.PNG" class="image" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="round-popup">
+                    <p class="project-title">Chrome Extension(Program upload after removing API keys)</p>
+                    <div class="round-popup_sub">
+                        <a href="JMA_Alert.zip" class="link">JMA_EQ_ALERT Chrome Extension(ver)</a>
+                        <a href="CWA_Alert.zip" class="link">CWA_EQ_ALERT Chrome Extension(ver)</a>
+                        <a href="https://github.com/INONULL/Chrome_Excel_AutoFill" class="link">Excel_AutoFill</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--Information-->
+        <div class="round-popup">
+            <div class="round-popup">
+                    <button class="toggle-btn-title" id="career_button" aria-expanded="false" onclick="toggleCareer()">[▶Information Open Click]</button>
+                    <div class="round-popup_sub">
+                        <div id="career_container">
+                            <p><b>Electronics Engineering, KyungPook National University:</b>
+                                <br>Implementation of Automatic Separation Trash Can Using Deep Learning and Patent Application Experience</p>
+                                <p><b>Defense Agency for Technology and Quality (DTAQ)<br>Korea Research Institute for defense Technology planning and advancement (KRIT) (Researcher):
+                                <br></b>AI Server Construction and Operation(₩650M) / RFP(Proposal Request Form) Writing / Participation in Article Writing / Official Document Writing / Equipment Management, etc.<br>Other documents related to military installation construction cannot be uploaded</p>
+                                <p><b>Korea Transport Institute (Researcher):
+                                <br></b> Transportation Big Data Analysis/Translation (R → Python) / Paper Analysis / Proposal Writing and Administration, <br>Procurement (₩10M) etc.</p>
+                                <p><b>KyungPook National University, Institute of Advanced Convergence Technology (Researcher):
+                                <br></b> Embedded (Firmware) C Language:<br>[Watch, 3-color LED, Thermometer, Bluetooth Communication]<br>Chip PWM Control and Analysis Specification Data<br>NRF SDK[Nordic Semiconductor]</p>
+                                <p><b>Korean Testing Laboratory (Researcher):
+                                <br></b>EMC Test MIL-STD-461F, MIL-STD-461G, ECSS, GSFC <br>/ Data Sorting and Automation Program Development</p>
+                                <p><b>Korea Meteorological Administration (Researcher):
+                                <br></b> Computer Equipment Operation and [Program Development:<br>(Server Redundancy(Client Method), Excel_Web Automatic Input, <br>JMA_Telegram_Notification Monitoring, CWA Monitoring)]</p>
+                            <p><b>?</b></p>
+                            <b>Development Languages: C, JAVA, Python, (JavaScript[Node.js, Chrome_Extension], HTML, CSS)</b>
+                            <br><b>Server Construction: HW(AI) / SW(Node.js, Python) Experience</b>
+                            <p><b>Only Partially Uploaded / [PC and Mobile Optimization [Android(Firefox)]]</b></p>                
+                        </div>
+                    </div>
+                </div>
+                <div class="round-popup email">
+                    <p>E-mail: <a href="mailto:ljs_fr@live.com">ljs_fr@live.com</a></p>
+                    <p>[<a href="https://www.inonull.xyz">https://www.inonull.xyz</a>, <a href="https://inonull.github.io">https://inonull.github.io</a>]
+                    <br>ⓒAll rights reserved.</p>
+                    <div class="title_container">
+                        <img src="img/favicon.png" alt="favicon">
+                        <div>
+                            <h3 class="header"> Character is created by DALL-E 3 (Bing Image Creator)</h3>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ko-content">
+        <div class="round-popup_all">
+            <button class="toggle-btn-title-top" id="all_button" aria-expanded="false" onclick="toggleALL()" class="all-title">[국방기술품질원 ~ 기상청]◀ [Click]</button>
+            <div id="round_popup_sub">
+        <!--국방-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="krit_button" aria-expanded="false" onclick="toggleKRIT()">국방기술품질원(DTAQ)<br>[국방기술진흥연구소(KRIT)]◀ [Click]</button>
+            <div id="round_popup_sub_krit">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">RFP작성 및 사업 관리</p>
+                        <button class="toggle-btn" id="image_button_krit" aria-expanded="false" onclick="toggleKRITImage()">[▶보기 Click]</button>
+                        <div id="image_content_krit">
+                            <img src="doc/KRIT/공고.PNG" class="image" alt="">
+                        </div>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">기고문 작성 참여_(4/4저자)</p>
+                        <button class="toggle-btn" id="pdf_button_krit" aria-expanded="false" onclick="toggleKRITPDF()">[▶미리보기 Click]</button>
+                        <!-- <iframe id="pdf_content_krit" src="doc/KRIT/메타버스의 국방분야 구현 방안에 대한 고찰.pdf" title="webviewer"></iframe> -->
+                        <iframe src="about:blank" id="pdf_content_krit" ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--교통-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="koti_button" aria-expanded="false" onclick="toggleKOTI()">한국교통연구원(KOTI)◀ [Click]</button>
+            <div id="round_popup_sub_koti">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">논문 분석 및 요약</p>
+                        <button class="toggle-btn" id="paper_button_koti" aria-expanded="false" onclick="toggleKOTIPaper()">[▶보기 Click]</button>
+                        <div id = "paper_content_koti">
+                            <!-- <iframe src="doc/KOTI/논문분석1.pdf" title="webviewer" class="paper_content_koti"></iframe> -->
+                            <iframe src="about:blank" class="paper_content_koti" id="paper_content_koti1"></iframe>
+                            <!-- <iframe src="doc/KOTI/논문분석2.pdf" title="webviewer" class="paper_content_koti"></iframe> -->
+                            <iframe src="about:blank" class="paper_content_koti" id="paper_content_koti2"></iframe>
+                        </div>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">교통빅데이터 분석 코딩</p>
+                        <button class="toggle-btn" id="pdf_button_koti" aria-expanded="false" onclick="toggleKOTIPDF()">[▶보기 Click]</button>
+                        <!-- <iframe id="pdf_content_koti" src="doc/KOTI/교통연구원.pdf" title="webviewer"></iframe> -->
+                        <iframe id="pdf_content_koti" src="about:blank"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">연간 보고서 수정 및 보완(올려도 되나?)</p>
+                        <button class="toggle-btn" id="embed_button" aria-expanded="false" onclick="toggleKOTIEmbed()">[▶미리보기 Click]</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--첨단정보-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="knu_button" aria-expanded="false" onclick="toggleKNU()">첨단정보통신융합산업기술원(KNU/IACT)◀ [Click]</button>
+            <div id="round_popup_sub_knu">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">임베디드 펌웨어 코딩(C언어)[데이터 유실😫]</p>
+                        <button class="toggle-btn" id="knu_video_button" aria-expanded="false" onclick="toggleKNUVideo()">[▶View Click]</button>
+                        <video src="about:blank" id="video_content_knu" controls>LED</video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--한국산업-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="ktl_button" aria-expanded="false" onclick="toggleKTL()">한국산업기술시험원(KTL)◀ [Click]</button>
+            <div id="round_popup_sub_ktl">
+                <div class="round-popup">
+                    <div class="round-popup_sub">
+                        <p class="project-title">위성 전자파 측정 시험_메뉴얼_작성</p>
+                        <button class="toggle-btn" id="pdf_button_ktl" aria-expanded="false" onclick="toggleKTLPDF()">[▶보기 Click]</button>
+                        <!-- <iframe id="pdf_content_ktl" src="doc/KTL/Bonding_Isolation_Test_to_CERE101102.pdf" title="webviewer"></iframe> -->
+                        <iframe id="pdf_content_ktl" src="about:blank"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Photo Tool(Python)</p>
+                        <a href="https://github.com/INONULL/img_conv" class="link">링크</a>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">EMC32 보조 프로그램 개발(Python)</p>
+                        <a href="https://github.com/INONULL/EMC32_Figure_Extractor" class="link">링크</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--기상청-->
+        <div class="round-popup">
+            <button class="toggle-btn-title" id="kma_button" aria-expanded="false" onclick="toggleKMA()">기상청(KMA)◀ [Click]</button>
+            <div id="round_popup_sub_kma">
+                <div class="round-popup_sub">
+                    <p class="project-title">JMA_EQ_ALERT (Server/Chrome_Extension/Telegram)</p>
+                    <div class="round-popup_sub">
+                        <p class="project-title">개인 서버 구성도</p>
+                        <button class="toggle-btn" id="image_button_kma" aria-expanded="false" onclick="toggleKMAImage()">[▶보기 Click]</button>
+                        <div id="image_content_kma">
+                            <img src="img/서버.png" class="image" alt="">
+                        </div>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">개인 서버(JMA_Alert): <a class="project-title" href="https://inonull.xyz">Link(HTTPS)</a></p>
+                        <button class="toggle-btn" id="embed_button_kma" aria-expanded="false" onclick="toggleKMAEmbed()">[▶서버 미리보기 Click]</button>
+                        <iframe src="about:blank" id="embed_content_kma" title="JMA_EEW_Alert"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Telegram_Message</p>
+                        <button class="toggle-btn" id="telegram_button_kma" aria-expanded="false" onclick="toggleKMATelegram()">[▶보기 Click]</button>
+                        <div id="telegram_content_kma">
+                            <img src="img/kma/jma_alert_test.PNG" class="image" alt="">
+                            <img src="img/kma/jma_alert.PNG" class="image" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="round-popup_sub">
+                    <p class="project-title">CWA_EQ_ALERT(Chrome_Extension/Telegram)</p>
+                    <div class="round-popup_sub">
+                        <p class="project-title">CWA_EQ_ALERT 구조</p>
+                        <button class="toggle-btn" id="pdf_button_kma" aria-expanded="false" onclick="toggleKMAPDF()">[▶보기 Click]</button>
+                        <!-- <iframe id="pdf_content_kma" src="doc/KMA/대만지진정보.pdf" title="webviewer"></iframe> -->
+                        <iframe id="pdf_content_kma" src="about:config"></iframe>
+                    </div>
+                    <div class="round-popup_sub">
+                        <p class="project-title">Telegram_Message(번외 프로젝트)</p>
+                        <button class="toggle-btn" id="telegram_button_kma1" aria-expanded="false" onclick="toggleKMATelegram1()">[▶보기 Click]</button>
+                        <div id="telegram_content_kma1">
+                            <img src="img/kma/cwa_alert.PNG" class="image" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="round-popup">
+                    <p class="project-title">크롬확장 프로그램(API키 제거 후 업로드 예정)</p>
+                    <div class="round-popup_sub">
+                        <a href="JMA_Alert.zip" class="link">JMA_EQ_ALERT Chrome Extension(ver)</a>
+                        <a href="CWA_Alert.zip" class="link">CWA_EQ_ALERT Chrome Extension(ver)</a>
+                        <a href="https://github.com/INONULL/Chrome_Excel_AutoFill" class="link">Excel_AutoFill</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--정보-->
+        <div class="round-popup">
+            <div class="round-popup">
+                    <button class="toggle-btn-title" id="career_button" aria-expanded="false" onclick="toggleCareer()">[▶정보 Click]</button>
+                    <div class="round-popup_sub">
+                        <div id="career_container">
+                            <p><b>경북대학교 전자공학부:</b>
+                                <br>딥러닝을 활용한 자동 분리수거 쓰레기통 구현 및 <br>특허 출원 경험(1인)</p>
+                                <p><b>국방기술품질원 부설 국방기술진흥연구소(연구원):
+                                <br></b>AI 서버 구축 및 운영(6.5억) / RFP(제안요청서)작성 /<br> 기고문 작성 참여 / 공문서 작성 / 행정·비품 관리 등<br>군사지역 설치 건 관련 기타 자료 업로드 불가</p>
+                                <p><b>한국교통연구원(연구원):
+                                <br></b> 교통빅데이터 분석/번역 (R → Python) /<br>논문 분석 / 제안서 작성 및 행정 (구매 1000만원)</p>
+                                <p><b>첨단정보통신융합산업기술원(연구원):
+                                <br></b> 임베디드 (펌웨어) C언어:<br>[시계, 3색 LED, 온도계, 블루투스 통신]<br>PWM 제어 및 칩셋 데이터시트 분석<br>NRF SDK[Nordic Semiconductor]</p>
+                                <p><b>한국산업기술시험원(연구원):
+                                <br></b>전자파 시험 MIL-STD-461F, MIL-STD-461G, ECSS, GSFC <br>/ 자료 정리 및 자동화 프로그램 개발</p>
+                                <p><b>기상청(연구원):
+                                <br></b> 전산장비 운영 및 [프로그램 개발: <br>(서버 이중화(클라이언트 방식), Excel_Web 자동입력, <br>JMA_Telegram_통보 모니터링, CWA모니터링)]</p>
+                            <p><b>?</b></p>
+                            <b>개발 언어: C, JAVA, Python, (JavaScript[Node.js, Chrome_Extension], HTML, CSS)</b>
+                            <br><b>서버 구축: HW(AI) / SW(Node.js, Python) 경험</b>
+                            <p><b>일부만 올림 / [PC 및 모바일 최적화[Android(Firefox)]]</b></p>                
+                        </div>
+                    </div>
+                </div>
+                <div class="round-popup email">
+                    <p>E-mail: <a href="mailto:ljs_fr@live.com">ljs_fr@live.com</a></p>
+                    <p>[<a href="https://www.inonull.xyz">https://www.inonull.xyz</a>, <a href="https://inonull.github.io">https://inonull.github.io</a>]
+                    <br>ⓒAll rights reserved.</p>
+                    <div class="title_container">
+                        <img src="img/favicon.png" alt="favicon">
+                        <div>
+                            <h3 class="header"> Character is created by DALL-E 3 (Bing Image Creator)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+<script>
+    window.current_lang = 'ko'
+    function switchLanguage(lang) {
+        if (lang === 'en') {
+            document.getElementById('en-content').style.display = 'block';
+            document.getElementById('ko-content').style.display = 'none';
+            document.documentElement.lang = 'en';
+            current_lang = 'en';
+        } else if (lang === 'ko') {
+            document.getElementById('en-content').style.display = 'none';
+            document.getElementById('ko-content').style.display = 'block';
+            document.documentElement.lang = 'ko';
+            current_lang = 'ko';
+        }
+    }
+</script>
+</body>
+</html>

@@ -107,3 +107,27 @@ function toggleKTLPDF() {
         } 
     }
 }
+function toggleKTLPDF_HowTo() {
+    const pdf_content_ktl1 = document.querySelector(`#${window.current_lang}-content #pdf_content_ktl1`);
+    const pdf_button_ktl1 = document.querySelector(`#${window.current_lang}-content #pdf_button_ktl1`)
+    const isHidden = pdf_content_ktl1.classList.contains('visible');
+    if(window.current_lang == 'ko'){
+        if (isHidden) {
+            pdf_content_ktl1.classList.toggle("visible");
+            pdf_button_ktl1.textContent = '[▶사용방법 보기 Click]';
+        } else {
+            roll_start(pdf_content_ktl1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KTL/HowToUse.pdf&embedded=true','doc/KTL/HowToUse.pdf');
+            pdf_content_ktl1.classList.toggle("visible");
+            pdf_button_ktl1.textContent = '[▼사용방법 닫기 Click]';
+        }
+    }else{
+        if (isHidden) {
+            pdf_content_ktl1.classList.toggle("visible");
+            pdf_button_ktl1.textContent = '[▶HowToUse Open Click]';
+        } else {
+            roll_start(pdf_content_ktl1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KTL/HowToUse.pdf&embedded=true','doc/KTL/HowToUse.pdf')
+            pdf_content_ktl1.classList.toggle("visible");
+            pdf_button_ktl1.textContent = '[▼HowToUse Close Click]';
+        } 
+    }
+}

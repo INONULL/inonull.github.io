@@ -116,7 +116,7 @@ function toggleKTLPDF_HowTo() {
             pdf_content_ktl1.classList.toggle("visible");
             pdf_button_ktl1.textContent = '[▶사용방법 보기 Click]';
         } else {
-            roll_start(pdf_content_ktl1, 'https://raw.githubusercontent.com/INONULL/inonull.github.io/87eda61eaaccdf9030530853fe9912f52538665a/doc/KTL/HowToUse.pdf&embedded=true','doc/KTL/HowToUse.pdf');
+            roll_start(pdf_content_ktl1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/87eda61eaaccdf9030530853fe9912f52538665a/doc/KTL/HowToUse.pdf&embedded=true','doc/KTL/HowToUse.pdf');
             pdf_content_ktl1.classList.toggle("visible");
             pdf_button_ktl1.textContent = '[▼사용방법 닫기 Click]';
         }
@@ -125,7 +125,7 @@ function toggleKTLPDF_HowTo() {
             pdf_content_ktl1.classList.toggle("visible");
             pdf_button_ktl1.textContent = '[▶HowToUse Open Click]';
         } else {
-            roll_start(pdf_content_ktl1, 'https://raw.githubusercontent.com/INONULL/inonull.github.io/87eda61eaaccdf9030530853fe9912f52538665a/doc/KTL/HowToUse.pdf&embedded=true','doc/KTL/HowToUse.pdf')
+            roll_start(pdf_content_ktl1, 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/87eda61eaaccdf9030530853fe9912f52538665a/doc/KTL/HowToUse.pdf&embedded=true','doc/KTL/HowToUse.pdf')
             pdf_content_ktl1.classList.toggle("visible");
             pdf_button_ktl1.textContent = '[▼HowToUse Close Click]';
         } 

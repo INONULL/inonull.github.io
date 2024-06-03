@@ -152,7 +152,7 @@ function toggleKMACopyCert() {
             pdf_content_kma1.classList.toggle("visible");
             pdf_button_kma1.textContent = '[▶보기 Click]';
         } else {
-            roll_start(pdf_content_kma1,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KMA/Copyright_Cert.pdf&embedded=true','doc/KMA/Copyright_Cert.pdf');
+            roll_start(pdf_content_kma1,'https://raw.githubusercontent.com/INONULL/inonull.github.io/87eda61eaaccdf9030530853fe9912f52538665a/doc/KMA/Copyright_Cert.pdf&embedded=true','doc/KMA/Copyright_Cert.pdf');
             pdf_content_kma1.classList.toggle("visible");
             pdf_button_kma1.textContent = '[▼닫기 Click]';
         }
@@ -161,7 +161,7 @@ function toggleKMACopyCert() {
             pdf_content_kma1.classList.toggle("visible");
             pdf_button_kma1.textContent = '[▶Open Click]';
         } else {
-            roll_start(pdf_content_kma1,'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/INONULL/inonull.github.io/e5abcfe4fbb3d4e5436e12c96102622655ca6444/doc/KMA/Copyright_Cert.pdf&embedded=true','doc/KMA/Copyright_Cert.pdf');
+            roll_start(pdf_content_kma1,'https://raw.githubusercontent.com/INONULL/inonull.github.io/87eda61eaaccdf9030530853fe9912f52538665a/doc/KMA/Copyright_Cert.pdf&embedded=true','doc/KMA/Copyright_Cert.pdf');
             pdf_content_kma1.classList.toggle("visible");
             pdf_button_kma1.textContent = '[▼Close Click]';
         }  
